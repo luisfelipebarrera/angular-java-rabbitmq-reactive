@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: restaurant-reactive
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: MySecurePassword123!
+
+spring:
+  application:
+    name: restaurant-reactive-poc
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: MySecurePassword123!

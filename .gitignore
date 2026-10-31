@@ -1,3 +1,7 @@
+# ############################################################################
+# Template Java
+# ############################################################################
+
 # Compiled class file
 *.class
 
@@ -22,3 +26,57 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# ############################################################################
+# Template Angular
+# ############################################################################
+
+# Compiled and temporary outputs
+/dist/
+/tmp/
+/out-tsc/
+/bazel-out/
+
+# Angular Cache
+/.angular/
+
+# Dependencies (Downloaded locally via `npm install` / `yarn install`)
+/node_modules/
+
+# npm profiles and error logs
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+.pnpm-debug.log*
+
+# Test coverage (Unit tests with Karma/Jasmine/Jest)
+/coverage/
+/e2e/test-output/
+
+# Configuration files and secrets (Never commit these!)
+.env
+.env.local
+.env.*.local
+src/environments/environment.development.ts
+src/environments/environment.prod.ts
+
+# Folders for editors and IDEs (Optional, but recommended)
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code configurations
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# Operating system files
+.DS_Store
+Thumbs.db

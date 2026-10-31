@@ -1,0 +1,20 @@
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq-for-angular-java
+    restart: unless-stopped
+    ports:
+      - "${RABBITMQ_MESSAGE_PORT}:5672"
+      - "${RABBITMQ_ADMIN_PORT}:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
+    volumes:
+      - rabbitmq_data:${RABBITMQ_DATA_PATH}
+    networks:
+      - rabbitmq-for-angular-java
+networks:
+  rabbitmq-for-angular-java:
+    driver: bridge
+volumes:
+  rabbitmq_data:
